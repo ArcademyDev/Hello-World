@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Jam Digital</title>
+</head>
+<body>
+  <h1 id="jam">00:00:00</h1>
+  <hr>
+  <h2>Waktu Indonesia Barat</h2>
+  <script>
+    function updateJam() {
+      let sekarang = new Date();
+      let jam = String(sekarang.getHours()).padStart(2, '0');
+      let menit = String(sekarang.getMinutes()).padStart(2, '0');
+      let detik = String(sekarang.getSeconds()).padStart(2, '0');
+      document.getElementById("jam").innerText = jam + ":" + menit + ":" + detik;
+    }
+
+    
+    setInterval(updateJam, 1000);
+
+  
+    updateJam();
+  </script>
+</body>
+</html>
