@@ -3,12 +3,22 @@
     <head>
         <title>table merging
         </title>
+        <style>
+            table, yd {
+
+                border: 2px solid black;
+                border-collapse: collapse;
+                text-align: center;
+                width: 300px;
+                height: 60px;
+            }
+        </style>
     </head>
     <body>
         <table border="1" cellspacing="0" cellpadding="5">
+           <!-- menggabungkan kolom 
             <tr>
-                <td>1,1</td>
-                <td>1,2</td>
+                <td colspan="2">colspan 1</td>
                 <td>1,3</td>
             </tr>
             <tr>
@@ -17,11 +27,49 @@
                 <td>2,3</td>
             </tr>
             <tr>
-
                 <td>3,1</td>
                 <td>3,2</td>
                 <td>3,3</td>
+            </tr>-->
+
+            <!--menggabungkan baris
+            <tr>
+                <td rowspan="3">rowspan</td>
+                <td colspan="2">colspan</td>
             </tr>
+            <tr>
+                <td>2,2</td>
+                <td>2,3</td>
+            </tr>
+            <tr>
+            <td>3,2</td>
+            <td>3,3</td>
+            </tr>
+       -->
+            <!--latihan-->
+            <tr>
+                <td>1,1</td>
+                <td>1,2</td>
+                <td>1,3</td>
+                <td>1,4</td>
+            </tr>
+            <tr>
+                <td>2,1</td>
+                <td colspan="2" rowspan="2">?</td>
+                <td>2,4</td>
+            </tr>
+            <tr>
+                <td>3,1</td>
+                <td>3,4</td>
+            </tr>
+            <tr>
+                <td>4,1</td>
+                <td>4,2</td>
+                <td>4,3</td>
+                <td>4,4</td>
+            </tr>
+
+
         </table>
     </body>
 </html>
