@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <style>
+          table, td {
+
+                border: 2px solid black;
+                border-collapse: collapse;
+                text-align: center;
+                width: 300px;
+                height: 60px;
+            }
+            .cn-label{
+
+              color: red;
+            }
+            #pria {
+              background: red;
+            }
+        </style>
+    </head>
+    <body>
+      <table border="1" cellspacing="0" cellpadding="5">
+      <form>
+        <tr>
+    <td><label class="cn-label" for="username">username :</label></td> 
+      <td><input type="text" id="username"></td>
+        </tr>
+      <br>
+      <tr>
+      <td><label class="cn-label" for="password">password :</label></td>
+      <td><input type="password" id="password"></td>
+      </tr>
+      <br>
+      <tr>
+      <td colspan="2"><input  type="radio" id="pria" name="jeniskelamin"><label for="pria">pria</label>
+      <input type="radio" id="wanita" name="jeniskelamin"><label for="wanita">wanita</label></td>
+      </tr>
+
+      <br>
+      <tr>
+      <td colspan="3"><input type="checkbox" id="menyanyi"><label for="menyanyi">menyanyi</label>
+      <input type="checkbox" id="mancing"><label for="mancing">mancing</label>
+      <input type="checkbox" id="berolahraga"><label for="berolahraga">berolahraga</label></td>
+      </tr>
+    <br>
+    <tr>
+    <td><label for="textarea">textarea :</label></td>
+    
+<td>
+  <textarea id="textarea"></textarea>
+</td>
+    </tr>
+    <br>
+    <tr>
+      <td><label for="combo box">combobox :</label></td>
+    <td><select id="combo box">
+      <option>Indonesia</option>
+      <option>Malaysia</option>
+      <option>singapura</option>
+    </td>
+    </select>
+    </tr>
+    <br>
+    <tr>
+
+    <td colspan="2"><button type="submit">Kirim!</button></td>
+    
+  </tr>
+
+      </form>
+
+
+    </body>
+</html>
