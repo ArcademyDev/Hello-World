@@ -1,0 +1,16 @@
+h1{
+    font-size:  100px;
+    color: rgba(255, 127, 80, 0.897);
+    text-decoration: underline;
+    text-transform: uppercase;
+    word-spacing: 10px;
+}
+
+p1{
+    text-align: center;
+    text-indent: 100px;
+    letter-spacing: 5px;
+}
+a{
+  text-decoration: none; 
+}
