@@ -1,0 +1,44 @@
+.hanni {
+    color: pink;
+
+}
+
+.hanni:hover{
+    color: palevioletred;
+    font-family: arial;
+    font-size: 20px;
+}
+
+.hanni:active{
+    font-style: italic;
+    
+}
+
+.hanni:visited{
+    color: red;
+}
+
+li:first-child a {
+    color: orange;
+}
+
+li:last-child a{
+    color: yellow;
+}
+
+li:nth-child(3n+1) a{
+    color: brown;
+}
+
+li:nth-child(odd) a:hover {
+    color: black;
+}
+
+li:nth-child(even) a:hover {
+    color: darkorange;
+}
+
+p:last-of-type{
+    color: red;
+}
+}
